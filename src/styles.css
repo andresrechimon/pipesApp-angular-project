@@ -8,3 +8,21 @@ html{
 .text-layout{
     color: var(--text-color);
 }
+
+@media (max-width: 413px) {
+    .bigScreen {
+      display:none;
+    }
+    .smallScreen {
+      display:block;
+    }
+  }
+  
+  @media (min-width: 414px) {
+    .bigScreen {
+      display:block;
+    }
+    .smallScreen {
+      display:none;
+    }
+  }

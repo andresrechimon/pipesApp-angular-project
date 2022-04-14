@@ -11,11 +11,15 @@
 
     </div>
     
-    <div class="p-toolbar-group-right">
-        <button (click)="changeCap()" pButton type="button" label="capitalToggler" class="mr-1"></button>
-        <button (click)="changeOrder('name')" pButton icon="pi pi-sort" label="Ordenar por Nombre" class="p-button-info mr-1"></button>
-        <button (click)="changeOrder('nationality')" pButton icon="pi pi-sort" label="Ordenar por Nacionalidad" class="p-button-success mr-2"></button>
-        <button (click)="changeOrder('type')" pButton icon="pi pi-sort" label="Ordenar por Tipo" class="p-button-help mr-2"></button>
+    <div class="p-toolbar-group-center">
+        <button (click)="changeCap()" pButton type="button" label="capitalToggler" class="mr-1 bigScreen"></button>
+        <button (click)="changeCap()" pButton type="button" label="capitalToggler" class="mr-1 smallScreen col-12"></button>
+        <button (click)="changeOrder('name')" pButton icon="pi pi-sort" label="Nombre" class="p-button-info mr-1 bigScreen"></button>
+        <button (click)="changeOrder('name')" pButton icon="pi pi-sort" label="Nombre" class="p-button-info mr-1 smallScreen col-12"></button>
+        <button (click)="changeOrder('nationality')" pButton icon="pi pi-sort" label="Nacionalidad" class="p-button-success mr-1 bigScreen"></button>
+        <button (click)="changeOrder('nationality')" pButton icon="pi pi-sort" label="Nacionalidad" class="p-button-success mr-1 smallScreen col-12"></button>
+        <button (click)="changeOrder('type')" pButton icon="pi pi-sort" label="Tipo" class="p-button-help mr-1 bigScreen"></button>
+        <button (click)="changeOrder('type')" pButton icon="pi pi-sort" label="Tipo" class="p-button-help mr-1 smallScreen col-12"></button>
     </div>
 </p-toolbar>
 

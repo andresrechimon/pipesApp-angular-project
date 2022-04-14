@@ -3,13 +3,22 @@
     <p>Pipes incluidos en Angular - Usualmente en el módulo de Common</p>
 </div>
 <div class="grid">
-    <div class="col-4">
+    <div class="col-4 bigScreen">
         <p-card header="uppercase" [subheader]="lowerName |uppercase"> {{lowerName |uppercase}} </p-card>
     </div>
-    <div class="col-4">
+    <div class="col-12 smallScreen">
+        <p-card header="uppercase" [subheader]="lowerName |uppercase"> {{lowerName |uppercase}} </p-card>
+    </div>
+    <div class="col-4 bigScreen">
         <p-card header="lowercase" [subheader]="upperName |lowercase"> {{upperName |lowercase}} </p-card>
     </div>
-    <div class="col-4">
+    <div class="col-12 smallScreen">
+        <p-card header="lowercase" [subheader]="upperName |lowercase"> {{upperName |lowercase}} </p-card>
+    </div>
+    <div class="col-4 bigScreen">
+        <p-card header="titleCase" [subheader]="fullName |titlecase"> {{fullName |titlecase}} </p-card>
+    </div>
+    <div class="col-12 smallScreen">
         <p-card header="titleCase" [subheader]="fullName |titlecase"> {{fullName |titlecase}} </p-card>
     </div>
 </div>
@@ -18,7 +27,7 @@
     <p>Pipes para Fechas</p>
 </div>
 <div class="grid">
-    <div class="col-6">
+    <div class="col-6 bigScreen">
         <p-card>
             <ul>
                 <li>date</li>
@@ -37,7 +46,44 @@
             </ul>
         </p-card> 
     </div>
-    <div class="col-6">
+    <div class="col-12 smallScreen">
+        <p-card>
+            <ul>
+                <li>date</li>
+                <li>date | date</li>
+                <li>date | date:'short'</li>
+                <li>date | date:'medium'</li>
+                <li>date | date:'long'</li>
+            </ul>
+
+            <hr>
+            <ul>
+                <li>
+                    date | date:'long':'GMT-2'
+                </li>
+                <li>date | date:'long':'GMT-2':'en'</li>
+            </ul>
+        </p-card> 
+    </div>
+    <div class="col-6 bigScreen">
+        <p-card>
+            <ul>
+                <li> {{date}} </li>
+                <li> {{date | date}} </li>
+                <li> {{date | date:'short'}} </li>
+                <li> {{date | date:'medium'}} </li>
+                <li> {{date | date:'long'}} </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    {{date | date:'long':'GMT-2'}}
+                </li>
+                <li>{{date | date:'long':'GMT-2':'en'}}</li>
+            </ul>
+        </p-card> 
+    </div>
+    <div class="col-12 smallScreen">
         <p-card>
             <ul>
                 <li> {{date}} </li>
